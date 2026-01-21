@@ -1,0 +1,22 @@
+<h1>Food Menu</h1>
+
+<div *ngFor="let food of foodItems">
+  <h2>{{ food.name }}</h2>
+
+  <p><strong>Category:</strong> {{ food.category }}</p>
+  <p><strong>Cooking Time:</strong> {{ food.cookingTime }} minutes</p>
+  <p><strong>Price:</strong> ${{ food.price }}</p>
+
+  <p><strong>Ingredients:</strong></p>
+  <ul>
+    <li *ngFor="let ingredient of food.ingredients">
+      {{ ingredient }}
+    </li>
+  </ul>
+
+  <p *ngIf="food.notes">
+    <strong>Notes:</strong> {{ food.notes }}
+  </p>
+
+  <hr>
+</div>
