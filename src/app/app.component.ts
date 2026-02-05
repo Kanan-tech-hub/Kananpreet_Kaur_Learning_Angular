@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { FoodListComponent } from './food-list/food-list.component';
 
 @Component({
-  selector: 'app-food-list',
+  selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './food-list.component.html',
-  styleUrls: ['./food-list.component.css']
+  imports: [FoodListComponent],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class FoodListComponent {}
+export class App { }
