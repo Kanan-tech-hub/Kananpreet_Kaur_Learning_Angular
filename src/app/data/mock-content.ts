@@ -1,5 +1,5 @@
 
-import { foodItem } from '../foodItem'; 
+import { foodItem } from '../models/foodItem'; 
 
 export const FOOD_ITEMS: foodItem[] = [
   { id: 0, name: 'Pizza', ingredients: ['Dough'], cookingTime: 15, price: 12, category: 'Italian' },
