@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FoodListItemComponent } from '../food-list-item/food-list-item.component';
-import { foodItem } from '../foodItem'; // Import your interface
+import { foodItem } from '../models/foodItem';
 
 @Component({
   selector: 'app-food-list',

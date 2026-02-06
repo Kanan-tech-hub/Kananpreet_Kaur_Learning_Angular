@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { foodItem } from '../foodItem';
+import { foodItem } from '../models/foodItem';
 
 @Component({
   selector: 'app-food-list-item',
