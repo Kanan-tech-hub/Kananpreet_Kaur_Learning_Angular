@@ -1,0 +1,9 @@
+<div>
+  @for (food of foodArray; track food.id; let i = $index) {
+    <app-food-list-item 
+      [item]="food" 
+      [class.even-bg]="i % 2 === 0"
+      [class.odd-bg]="i % 2 !== 0">
+    </app-food-list-item>
+  }
+</div>

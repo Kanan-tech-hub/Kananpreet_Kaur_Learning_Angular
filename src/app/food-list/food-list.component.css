@@ -1,0 +1,9 @@
+.even-bg {
+  background-color: #f2f2f2; /* Light grey */
+  display: block;
+}
+
+.odd-bg {
+  background-color: #ffffff; /* White */
+  display: block;
+}
