@@ -1,28 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; 
-import { FoodService } from './food.service';
-import { foodItem } from './models/foodItem';
-// Import your components so they can be used in the template
-import { FoodListComponent } from './food-list/food-list.component';
-import { FoodListItemComponent } from './food-list-item/food-list-item.component';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // Essential for router-outlet
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  // ADD FoodListComponent and FoodListItemComponent HERE
-  imports: [CommonModule, FoodListComponent, FoodListItemComponent], 
+  standalone: true, // Required for Angular 18 features
+  imports: [
+    CommonModule, 
+    RouterModule // Must be imported here so <router-outlet> works in the HTML
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  featuredFood?: foodItem;
-
-  constructor(private foodService: FoodService) {} 
-
-  ngOnInit(): void {
-    // Step 12: Retrieve item with ID 1 from the service [cite: 32, 39]
-    this.foodService.getFoodItem(1).subscribe(item => {
-      this.featuredFood = item;
-    });
-  }
+export class AppComponent {
+  title = 'Food List App'; // You can define your application title here
 }

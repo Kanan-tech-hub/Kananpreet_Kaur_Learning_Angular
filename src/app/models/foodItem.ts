@@ -5,5 +5,6 @@ export interface foodItem {
   cookingTime: number; // in minutes
   price: number;
   category: string;
-  notes?: string;
+  imageUrl?: string; 
+  
 }
