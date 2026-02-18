@@ -1,0 +1,12 @@
+/* Requirement 9: Add styling informing the users the page was not found */
+.not-found-container {
+  text-align: center;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.home-link {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}

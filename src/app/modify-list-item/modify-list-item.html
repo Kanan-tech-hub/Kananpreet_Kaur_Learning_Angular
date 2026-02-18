@@ -1,0 +1,16 @@
+<div class="modify-container">
+  <h2>Add / Update Food Item</h2>
+
+  <form [formGroup]="foodForm" (ngSubmit)="onSubmit()">
+
+    <input formControlName="id" placeholder="ID">
+    <input formControlName="name" placeholder="Name">
+    <input formControlName="price" placeholder="Price">
+    <input formControlName="cookingTime" placeholder="Cooking Time">
+    <input formControlName="category" placeholder="Category">
+
+    <button type="submit">Save Item</button>
+    <button type="button" (click)="foodForm.reset()">Reset</button>
+
+  </form>
+</div>
